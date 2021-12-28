@@ -1,0 +1,18 @@
+
+body{
+    background-color: rgb(236, 236, 236);
+    max-height:877px ;
+}
+
+.sheet-text{
+    margin: 0.2rem auto;
+    padding:2.5rem;
+    border-radius: 0.1rem;
+    background-color: #fff;
+    width: 620px;
+    height: 877px;
+    box-shadow: rgb(134, 134, 134) 1px 1px 1px;
+    max-width: 620px;
+    height: 877px;
+    
+}
