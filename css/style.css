@@ -16,3 +16,6 @@ body{
     box-shadow: rgb(134, 134, 134) 1px 1px 1px;
     
 }
+.menu li{ 
+    margin:0.4rem;
+}

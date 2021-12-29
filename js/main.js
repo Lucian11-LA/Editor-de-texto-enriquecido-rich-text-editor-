@@ -2,6 +2,8 @@ texto = window.document.getElementById("texto");
 
 btnFontSize = window.document.getElementById("fontSize");
 
+boldBtn = window.document.getElementById('bold');
+
 
 
 function changeFontFamily(value){
@@ -26,3 +28,11 @@ function underlineText(){
 function boldText(){
     texto.style["font-weight"] = "bold";
 }
+
+function noBoldText(){
+    texto.style["font-weight"] = "0";
+
+}
+
+boldBtn.addEventListener('click',boldText());
+boldBtn.addEventListener('change',noBoldText())
