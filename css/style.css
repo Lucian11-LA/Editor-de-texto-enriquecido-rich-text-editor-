@@ -1,18 +1,18 @@
 
 body{
-    background-color: rgb(218, 218, 218);
-    max-height:877px ;
+    background-color: rgb(172, 171, 171);
+    
 }
 
 .sheet-text{
-    margin: 0.2rem auto;
+    margin: 0.4rem auto;
     padding:2.5rem;
-    border-radius: 0.1rem;
+    
     background-color: #fff;
+    
     width: 620px;
-    height: 877px;
+    height: 600px;
+    
     box-shadow: rgb(134, 134, 134) 1px 1px 1px;
-    max-width: 620px;
-    height: 877px;
     
 }
