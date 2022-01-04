@@ -1,4 +1,6 @@
 var texto = document.getElementById('texto');
+
+
 var btnFontFamily = document.getElementById('font-family');
 var btnUnderline = document.getElementById("underline");
 
@@ -6,6 +8,12 @@ var btnUnderline = document.getElementById("underline");
 function italicText(){
     texto.style['font-style'] = "italic";
 }
+
+function boldText(){
+    texto.style["font-weight"] = "bold";
+}
+
+
 
 function changeFontFamily(value){
     texto.style["font-family"] = value;
@@ -26,9 +34,6 @@ function underlineText(){
     texto.style["text-decoration"] = "underline";
 }
 
-function boldText(){
-    //texto.style["font-weight"] = "bold";
-}
 
 function noBoldText(){
     texto.style["font-weight"] = "0";
