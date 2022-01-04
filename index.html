@@ -4,59 +4,187 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text-rich</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="css/style.css">
+    <title>Rich Text</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
 </head>
 <body>
 
+    <div class="container">
 
-<div class="">
+        <header class="header">
 
-  <div class="">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" aria-label="Eleventh navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <select id="font-family" onchange="changeFontFamily(this.value)">
+                            <option selected value="sans seif" style="font-family: sans-serif;" >
+                                Sans Serif
+                            </option>
+                            <option selected value="Times New Roman" style="font-family: Times New Roman;">
+                                Times New Roman
+                            </option>
+                            <option selected value="Verdana" style="font-family: Verdana;" >
+                                Verdana
+                            </option>
 
-      <div class="collapse navbar-collapse" id="navbarsExample09">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0  menu">
-          <li class="nav-item">
-            <input type="number" min="8" max="120" id="fontSize"/>
-          </li>
-          <li class="nav-item">
-            <button>
-              I<img src="recuar.png">
-            </button>
-          </li>
-          <li class="nav-item">
-            <button id="bold">B</button>
+                            <option selected value="Arial" style="font-family: Arial;" >
+                                Arial
+                            </option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="number" id="font_size" name="font_size" min="8" max="70" value="12" onchange="changeFontSize(this.value)"> 
+                    </li>
+                    <li>
+                        <button type="button" name="underline" id="underline" class="menu-btn">
+                            <i class="fas fa-underline"></i>
+                        </button>
+                        
+                    </li>
+
+                    <li>
+                        <button type="button" name="italic" onclick="italicText();" class="menu-btn">
+                            <i class="fas fa-italic"></i>
+                        </button>
+                        
+                    </li>
+                    
+                    
+                    <li>
+                        <button type="button" name="bold" class="menu-btn">
+                            <i class="fas fa-bold"></i>
+                        </button>
+
+                    </li>
+                    
+                    <li>
+                        
+                        <button type="button" name="text-height" class="menu-btn">
+                            <i class="fas fa-text-height"></i>
+                        </button>
+
+                    </li>
+                    <li>
+                        
+                        <button type="button" name="text-width" class="menu-btn">
+                            <i class="fas fa-text-width"></i>
+                        </button>
+
+                    </li>
+                    <li>
+                        
+                        
+                        <button type="button" name="image" class="menu-btn">
+                            <i class="fas fa-image"></i>
+                        </button>
+
+                    </li>
+
+                    <li>
+                        <button type="button" name="align-center" class="menu-btn">
+                            <i class="fas fa-align-center"></i>
+                            
+                        </button>
+                    </li>
+                    <li>
+
+                        <button type="button" name="align-justify" class="menu-btn">
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+                    
+                    </li>
+                    <li>
+                        <button type="button" name="align-left" class="menu-btn">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                    
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <button type="button" name="align-right" class="menu-btn">
+                            <i class="fas fa-align-right"></i>
+                        </button>
+                    
+                        
+                    </li>
+
+                    
+                    
+                    <li>
+                        <button type="button" name="list" class="menu-btn">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    
+                        
+
+                    </li>
+                    <li>
+                        <button type="button" name="list-alt" class="menu-btn">
+                            <i class="fas fa-list-alt"></i>
+                        </button>
+                        
+                    </li>
+                    
+                    <li>
+                        <button type="button" name="file" class="menu-btn">
+                            <i class="fas fa-file"></i>
+                        </button>
+                        
+
+                        
+                    </li>
+                    
+                    <li>
+                        <button type="button" name="quote-left" class="menu-btn">
+                            <i class="fas fa-quote-left"></i>
+                        </button>
             
-          </li>
-          
+                    </li>
+                    
+                    <li>
+                        <button type="button" name="quote-righ" class="menu-btn">
+                            <i class="fas fa-quote-right"></i>
+                        </button>
+                        
+                    </li>
+                    
+                    <li>
+                        <button type="button" name="header" class="menu-btn">
+                            <i class="fas fa-header"></i>
+                        </button>
+                        
+                    </li>
 
-        </ul>
-      
-      </div>
+                    
+                    
+                    
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="content" >
+           <div class="texto"id="texto" contenteditable="true" aria-selected="true" selected="true">
+             Digite o texto aqui
+           </div>
+
+           <!--<textarea id="texto1">
+
+           </textarea>-->
+
+        </div>
+
+
+
+        <footer>
+            &copy;Lucian Alfred 2022 
+        </footer>
     </div>
-  </nav>
-
-  </div>
-
-    
-    
-    <div class="sheet-text" name="texto" id="texto" contenteditable="true" >
-            
-    </div>
-
-    
-</div>
-
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

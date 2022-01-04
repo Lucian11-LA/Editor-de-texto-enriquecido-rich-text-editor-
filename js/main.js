@@ -1,10 +1,11 @@
-texto = window.document.getElementById("texto");
-
-btnFontSize = window.document.getElementById("fontSize");
-
-boldBtn = window.document.getElementById('bold');
+var texto = document.getElementById('texto');
+var btnFontFamily = document.getElementById('font-family');
+var btnUnderline = document.getElementById("underline");
 
 
+function italicText(){
+    texto.style['font-style'] = "italic";
+}
 
 function changeFontFamily(value){
     texto.style["font-family"] = value;
@@ -26,7 +27,7 @@ function underlineText(){
 }
 
 function boldText(){
-    texto.style["font-weight"] = "bold";
+    //texto.style["font-weight"] = "bold";
 }
 
 function noBoldText(){
@@ -34,5 +35,5 @@ function noBoldText(){
 
 }
 
-boldBtn.addEventListener('click',boldText());
-boldBtn.addEventListener('change',noBoldText())
+
+//btnUnderline.addEventListener('click',underlineText())
