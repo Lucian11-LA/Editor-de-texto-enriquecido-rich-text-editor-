@@ -1,4 +1,4 @@
-h1>Editor de texto enriquecido</h1>
+<h1>Editor de texto enriquecido</h1>
 <p>
       Neste projecto vamos implementar um Editor de texto enriquecido
 </p>
