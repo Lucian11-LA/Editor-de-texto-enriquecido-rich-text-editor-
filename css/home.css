@@ -1,0 +1,88 @@
+*{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background:rgb(221, 220, 220);
+    color: black;
+}
+
+.container{
+    margin: 0 auto;
+    
+    width: 50rem;
+    border: 1px solid rgb(223, 223, 223);
+    background:#fff;
+    padding:1.5rem;
+}
+
+
+header{
+    background: rgba(255, 255, 255, 0.89);
+    margin:0 ;
+    width: ;
+
+    border: 1px solid  rgb(197, 195, 195);
+    
+    color: black;
+    padding: 0.5rem;
+
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.1rem;
+    margin: 0.3rem;
+
+}
+
+.navbar ul li button.menu-btn{
+    background-color: #fff;
+    border: none;
+}
+button.menu-btn:hover{
+    color: rgb(1, 153, 145);
+    padding: -0.8rem;
+}
+.navbar ul li select#font-family{
+    background-color: #fff;
+    border: none;
+    width: 7rem;
+    font-size: 12pt;
+}
+.navbar ul li input#font_size{
+    border: none;
+    width: 2.5rem;
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    height: 20rem;
+    border: 1px solid  rgb(223, 223, 223);
+    border-top: none;
+    margin: 0 auto;
+}
+
+.texto{
+    width: 49rem;
+    height: 20rem;
+    margin: 0 auto;
+    line-height: 0.5;
+    line-break: 100px;
+    padding: 0.5rem;
+    text-align: justify;
+    text-size-adjust: 49rem;
+    
+}
+
+footer{
+
+    background: #fff;
+    border: 1px solid  rgb(223, 223, 223);
+    padding: 2rem;
+
+}
